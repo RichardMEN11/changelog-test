@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "git@github.com:RichardMEN11/changelog-test.git",
   "author": "Richard Menning <richie@bdstudio.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "standard-version": "^9.3.0"
+  },
+  "scripts": {
+    "release": "standard-version"
+  }
 }
