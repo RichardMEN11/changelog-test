@@ -6,10 +6,20 @@ on:
      - "staging"
 
 jobs: 
-  generate: 
-    runs-on: macos-latest
+  release: 
+    runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npx standard-version
-  
+      - name: Build Changelog
+        id: github_release
+        uses: mikepenz/release-changelog-builder-action@v1
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create release
+        uses: actions/create-release@v1
+        with: 
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: ${{steps.github_release.outputs.changelog}}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
