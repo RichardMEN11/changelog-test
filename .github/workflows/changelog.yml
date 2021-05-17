@@ -11,6 +11,10 @@ jobs:
     steps: 
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+        with: 
+          name: 'Richard Menning'
+          email: 'richie@bdstudio.de'
       - run: npx standard-version
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
