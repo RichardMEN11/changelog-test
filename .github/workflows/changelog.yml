@@ -15,5 +15,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: generated Changelog
-          push_options: '--follow-tags'
           skip_dirty_check: true 
