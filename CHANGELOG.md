@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/RichardMEN11/changelog-test/compare/v1.1.0...v1.2.0) (2021-05-17)
+
+
+### Features
+
+* add changelog workflow ([#1](https://github.com/RichardMEN11/changelog-test/issues/1)) ([#2](https://github.com/RichardMEN11/changelog-test/issues/2)) ([9e8885f](https://github.com/RichardMEN11/changelog-test/commit/9e8885fb353bced5af65ad57079c857bd767a609))
+* test ([864a840](https://github.com/RichardMEN11/changelog-test/commit/864a840b6a4374418a15d4306b38ec70101320ac))
+
 ## 1.1.0 (2021-05-12)
 
 
