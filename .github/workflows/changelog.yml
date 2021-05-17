@@ -6,13 +6,10 @@ on:
      - "staging"
 
 jobs: 
-  release: 
-    runs-on: ubuntu-latest
+  generate: 
+    runs-on: macos-latest
     steps: 
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: Build Changelog
-        id: github_release
-        uses: mikepenz/release-changelog-builder-action@v1
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npx standard-version
+      - run: cat CHANGELOG.md
