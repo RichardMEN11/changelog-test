@@ -10,8 +10,9 @@ jobs:
     runs-on: macos-latest
     steps: 
       - uses: actions/checkout@v2
+        with:
+          ref: 'staging'
       - uses: actions/setup-node@v1
-
       - run: npx standard-version
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
