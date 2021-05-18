@@ -12,10 +12,12 @@ jobs:
         with:
           ref: 'staging'
           persist-credentials: false
-      - name: setup node 
-        uses: actions/setup-node@v1
-      - name: run standard-version
-        run: npx standard-version
+      - name: Install git-chglog
+        run: |
+          brew tap git-chglog/git-chglog
+          brew install git-chglog
+      - name: Generate Changelog
+        run: git-chglog -o CHANGELOG.md
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
