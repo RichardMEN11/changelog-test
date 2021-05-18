@@ -1,18 +1,29 @@
-name: Build and release
+name: generate changelog
 on: 
-  push:
-    branches:
-      - staging
-  pull_request:
-    branches:
-      - staging
-
-jobs:
-  package:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: nuuday/github-changelog-action@v1.0.0
+  push: 
+   branches:
+     - "staging"
+jobs: 
+  generate: 
+    runs-on: macos-latest
+    steps: 
+      - name: checkout branch
+        uses: actions/checkout@v2
         with:
-          next_version: "1.0.0"
-          config_dir: ".chglog"
+          ref: 'staging'
+          persist-credentials: false
+      - name: setup node 
+        uses: actions/setup-node@v1
+      - name: run standard-version
+        run: npx standard-version
+      - name: Commit files
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}  
 
