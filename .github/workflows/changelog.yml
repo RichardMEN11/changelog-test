@@ -11,9 +11,7 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls -a
       - uses: nuuday/github-changelog-action@v1.0.0
         with:
           next_version: "1.0.0"
-          
+          config_dir: ./.chglog
