@@ -1,21 +1,16 @@
-name: generate changelog
-
+name: Build and release
 on: 
-  push: 
-   branches:
-     - "staging"
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - staging
 
-jobs: 
-  generate: 
-    runs-on: macos-latest
-    steps: 
-      - uses: actions/checkout@v2
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: nuuday/github-changelog-action@v1.0.0
         with:
-          ref: 'staging'
-      - uses: actions/setup-node@v1
-      - run: git branch
-      - run: npx standard-version
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: generated Changelog
-          skip_dirty_check: true 
+          next_version: "1.0.0"  
