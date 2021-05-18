@@ -1,19 +1,105 @@
-# Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-## [1.4.0](https://github.com/RichardMEN11/changelog-test/compare/v1.3.1...v1.4.0) (2021-05-18)
+<a name="v1.4.3"></a>
+## [v1.4.3](https://github.com/RichardMEN11/changelog-test/compare/v1.4.2...v1.4.3) (2021-05-18)
 
 
-### Features
+<a name="v1.4.2"></a>
+## [v1.4.2](https://github.com/RichardMEN11/changelog-test/compare/v1.5.0...v1.4.2) (2021-05-18)
 
-* add new lof ([e959a19](https://github.com/RichardMEN11/changelog-test/commit/e959a19f6b916832a476b8b05b9b3dc8e90ca72f))
-* add test 4 ([ed62601](https://github.com/RichardMEN11/changelog-test/commit/ed62601d27367b47ade657e0db111d20f30e7c65))
-* test 5 ([2e450c9](https://github.com/RichardMEN11/changelog-test/commit/2e450c9f53ac4c7af09cece1d24fd7ed83402ff2))
+### Feat
+
+* test 5
 
 
-### Bug Fixes
+<a name="v1.5.0"></a>
+## [v1.5.0](https://github.com/RichardMEN11/changelog-test/compare/v1.4.1...v1.5.0) (2021-05-18)
 
-* delete old files ([3aae45a](https://github.com/RichardMEN11/changelog-test/commit/3aae45a53d3e00cba18caba5a5855094da208922))
 
-### 1.3.1 (2021-05-18)
+<a name="v1.4.1"></a>
+## [v1.4.1](https://github.com/RichardMEN11/changelog-test/compare/v1.4.0...v1.4.1) (2021-05-18)
+
+### Feat
+
+* add test 4
+
+
+<a name="v1.4.0"></a>
+## [v1.4.0](https://github.com/RichardMEN11/changelog-test/compare/v1.3.1...v1.4.0) (2021-05-18)
+
+### Feat
+
+* add new lof
+
+### Fix
+
+* delete old files
+
+
+<a name="v1.3.1"></a>
+## [v1.3.1](https://github.com/RichardMEN11/changelog-test/compare/v1.3.0...v1.3.1) (2021-05-18)
+
+### Feat
+
+* delete changelog
+
+
+<a name="v1.3.0"></a>
+## [v1.3.0](https://github.com/RichardMEN11/changelog-test/compare/v1.2.2...v1.3.0) (2021-05-18)
+
+### Feat
+
+* use tags
+* next try
+* generated new changelog
+* back to old version
+* try using my own
+* add config dir
+* add default config folder
+* try git-chglog
+* remove config
+* swiotch back to macos
+* add git config
+* switch to ubuntu
+* remove push options
+* change to push options
+* add opitons
+* add another feature
+* add checkout
+* add test ([#4](https://github.com/RichardMEN11/changelog-test/issues/4))
+* add changelog workflow ([#1](https://github.com/RichardMEN11/changelog-test/issues/1))
+
+### Fix
+
+* remove path
+* path
+* find current path
+
+
+<a name="v1.2.2"></a>
+## [v1.2.2](https://github.com/RichardMEN11/changelog-test/compare/v1.2.1...v1.2.2) (2021-05-17)
+
+
+<a name="v1.2.1"></a>
+## [v1.2.1](https://github.com/RichardMEN11/changelog-test/compare/v1.2.0...v1.2.1) (2021-05-17)
+
+
+<a name="v1.2.0"></a>
+## [v1.2.0](https://github.com/RichardMEN11/changelog-test/compare/v1.1.0...v1.2.0) (2021-05-17)
+
+### Feat
+
+* test
+* add changelog workflow ([#1](https://github.com/RichardMEN11/changelog-test/issues/1)) ([#2](https://github.com/RichardMEN11/changelog-test/issues/2))
+
+
+<a name="v1.1.0"></a>
+## v1.1.0 (2021-05-12)
+
+### Feat
+
+* add standard release support
+
+### Fix
+
+* create node application
+
