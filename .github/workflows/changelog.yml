@@ -9,7 +9,7 @@ on:
 
 jobs:
   package:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: nuuday/github-changelog-action@v1.0.0
         with:
