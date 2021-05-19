@@ -2,7 +2,7 @@ name: generate changelog
 on: 
   push: 
    branches:
-     - "staging"
+     - "main"
 jobs: 
   generate: 
     runs-on: macos-latest
@@ -12,16 +12,15 @@ jobs:
         with:
           ref: 'staging'
           persist-credentials: false
-      - name: Install git-chglog
-        run: |
-          brew tap git-chglog/git-chglog
-          brew install git-chglog
-      - name: Generate Changelog
-        run: git-chglog -o CHANGELOG.md
+      - name: setup node 
+        uses: actions/setup-node@v1
+      - name: run standard-version
+        run: npx standard-version
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git commit -m "Add changes" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
