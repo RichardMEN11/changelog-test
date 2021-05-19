@@ -1,3 +1,13 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 1.5.0 (2021-05-19)
+
+
+### Features
+
+* generate a changelog ([5d4ef89](https://github.com/RichardMEN11/changelog-test/commit/5d4ef8915f613c05ff2828084c31e87c08e7814d))
 
 <a name="v1.4.3"></a>
 ## [v1.4.3](https://github.com/RichardMEN11/changelog-test/compare/v1.4.2...v1.4.3) (2021-05-18)
@@ -102,4 +112,3 @@
 ### Fix
 
 * create node application
-
