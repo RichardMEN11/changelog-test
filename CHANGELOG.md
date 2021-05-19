@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/RichardMEN11/changelog-test/compare/v1.6.1...v1.7.0) (2021-05-19)
+
+
+### Features 🚀
+
+* add versionrc ([9f4c4dc](https://github.com/RichardMEN11/changelog-test/commit/9f4c4dcd21480afa65e36fa4da492fa59d0839e3))
+
+
+### Bug Fixes 🐛
+
+* change to staging ([bbce49d](https://github.com/RichardMEN11/changelog-test/commit/bbce49d265200d0f8280f091d08aebb3575762e5))
+
 ### 1.6.1 (2021-05-19)
 
 ## 1.6.0 (2021-05-19)
