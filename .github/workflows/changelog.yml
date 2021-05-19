@@ -27,5 +27,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}  
           tags: true
-          force: true
 
