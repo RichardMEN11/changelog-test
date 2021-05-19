@@ -10,7 +10,7 @@ jobs:
       - name: checkout branch
         uses: actions/checkout@v2
         with:
-          ref: 'staging'
+          ref: 'main'
           persist-credentials: false
       - name: Configure Git
         run: |
