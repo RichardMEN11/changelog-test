@@ -6,9 +6,11 @@
   "author": "Richard Menning <richie@bdstudio.de>",
   "license": "MIT",
   "devDependencies": {
-    "standard-version": "^9.3.0"
+    "standard-version": "^9.3.0",
+    "husky": "^6.0.0"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   }
 }
