@@ -16,7 +16,5 @@ GIT_BRANCH=$(parse_git_branch)
 BRANCH_NAME="staging"
 
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
-    echo 'on STaging'
-else
-    echo 'not on staging'
+   npx standard-version
 fi    
