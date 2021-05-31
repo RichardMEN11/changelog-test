@@ -7,4 +7,12 @@ function parse_git_branch() {
 }
 
 GIT_BRANCH=$(parse_git_branch)
-echo ${GIT_BRANCH}
+STAGING_BRANCH_NAME='staging'
+
+
+if [GIT_BRANCH == STAGING_BRANCH_NAME] 
+    then
+    echo 'on STaging'
+else
+    echo 'not on staging'
+fi    
