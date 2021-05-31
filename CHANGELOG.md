@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/RichardMEN11/changelog-test/compare/v1.6.5...v1.9.0) (2021-05-31)
+
+
+### Features 🚀
+
+* generate a changelog ([5d4ef89](https://github.com/RichardMEN11/changelog-test/commit/5d4ef8915f613c05ff2828084c31e87c08e7814d))
+
+
+### Others
+
+* **release:** 1.7.0 ([7a7dff8](https://github.com/RichardMEN11/changelog-test/commit/7a7dff87612a0eb562d305fb91f228b72280af67))
+
+### [1.4.3](https://github.com/RichardMEN11/changelog-test/compare/v1.4.2...v1.4.3) (2021-05-18)
+
+
+### Others
+
+* **release:** 1.4.3 ([42c2bc1](https://github.com/RichardMEN11/changelog-test/commit/42c2bc1ec8ce300d1b34d8c32fc98cfc6de7bfa0))
+
+### [1.4.2](https://github.com/RichardMEN11/changelog-test/compare/v1.5.0...v1.4.2) (2021-05-18)
+
+
+### Others
+
+* **release:** 1.4.2 ([5ee2482](https://github.com/RichardMEN11/changelog-test/commit/5ee248241ed4b8d3b2b64b4632d3289e1a3ce817))
+
+## [1.5.0](https://github.com/RichardMEN11/changelog-test/compare/v1.4.1...v1.5.0) (2021-05-18)
+
+
+### Others
+
+* **release:** 1.5.0 ([6aec3ca](https://github.com/RichardMEN11/changelog-test/commit/6aec3ca643882d2105df3e110afdf98d64f4e3ba))
+
+### [1.4.1](https://github.com/RichardMEN11/changelog-test/compare/v1.4.0...v1.4.1) (2021-05-18)
+
+
+### Others
+
+* **release:** 1.4.1 ([7a61b7d](https://github.com/RichardMEN11/changelog-test/commit/7a61b7d1b6ae1f22434b4db739b6f2d3eca0f6f6))
+
+## [1.4.0](https://github.com/RichardMEN11/changelog-test/compare/v1.3.1...v1.4.0) (2021-05-18)
+
+
+### Others
+
+* **release:** 1.4.0 ([6baae4f](https://github.com/RichardMEN11/changelog-test/commit/6baae4fa8234dd2539a5ea7023108907bce0a269))
+
 ## [1.7.0](https://github.com/RichardMEN11/changelog-test/compare/v1.6.5...v1.7.0) (2021-05-31)
 
 
