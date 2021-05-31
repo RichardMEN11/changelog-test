@@ -18,4 +18,5 @@ BRANCH_NAME="staging"
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
    npx standard-version
    git push --follow-tags origin staging
+   exit 1
 fi    
