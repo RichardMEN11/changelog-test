@@ -10,8 +10,7 @@ GIT_BRANCH=$(parse_git_branch)
 STAGING_BRANCH_NAME='staging'
 
 
-echo ${GIT_BRANCH}
-echo ${STAGING_BRANCH_NAME}
+echo ${GIT_BRANCH} = ${STAGING_BRANCH_NAME}
 
 if ["$GIT_BRANCH" = "$STAGING_BRANCH_NAME"]; then
     echo 'on STaging'
