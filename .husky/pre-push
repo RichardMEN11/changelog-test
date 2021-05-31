@@ -10,9 +10,11 @@ GIT_BRANCH=$(parse_git_branch)
 STAGING_BRANCH_NAME='staging'
 
 
-if [GIT_BRANCH == STAGING_BRANCH_NAME] 
-    then
-    echo 'on STaging'
-else
-    echo 'not on staging'
-fi    
+echo ${GIT_BRANCH}
+
+# if [${GIT_BRANCH} == ${STAGING_BRANCH_NAME}] 
+#     then
+#     echo 'on STaging'
+# else
+#     echo 'not on staging'
+# fi    
