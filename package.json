@@ -12,6 +12,6 @@
   "scripts": {
     "release": "standard-version",
     "prepare": "husky install",
-    "test": ""
+    "test": "echo hello"
   }
 }
