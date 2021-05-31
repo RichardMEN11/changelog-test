@@ -10,6 +10,7 @@
     "husky": "^6.0.0"
   },
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepare": "husky install"
   }
 }
