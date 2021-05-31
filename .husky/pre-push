@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# gets the current git branch
+function parse_git_branch() {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+GIT_BRANCH=$(parse_git_branch)
+STAGING_BRANCH_NAME='staging'
+
+
+if [GIT_BRANCH == STAGING_BRANCH_NAME] 
+    then
+    echo 'on STaging'
+else
+    echo 'not on staging'
+fi    
