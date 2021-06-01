@@ -25,7 +25,6 @@ if [ $GIT_BRANCH == $BRANCH_NAME ]; then
   case $yn in
       [Yy] ) 
         npx standard-version --skip.commit --skip.tag --skip.bump
-        rm changelog.html 
         cp -v changelog.md changelog.html
         echo "<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>"|cat - changelog.html > /tmp/out && mv /tmp/out changelog.html
       ;;
