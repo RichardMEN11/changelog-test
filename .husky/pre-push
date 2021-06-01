@@ -16,9 +16,16 @@ GIT_BRANCH=$(parse_git_branch)
 BRANCH_NAME="staging"
 
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
-   npx standard-version
-   rm changelog.html 
-   cp -v changelog.md changelog.html
-   echo "<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>"|cat - changelog.html > /tmp/out && mv /tmp/out changelog.html
+  echo "Do you want to generate a changelog?"
+  select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) 
+            npx standard-version
+            rm changelog.html 
+            cp -v changelog.md changelog.html
+            echo "<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>"|cat - changelog.html > /tmp/out && mv /tmp/out changelog.html;;
+        No ) exit;;
+    esac
+  done
 fi    
 
