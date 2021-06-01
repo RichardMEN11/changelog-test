@@ -18,16 +18,19 @@ GIT_BRANCH=$(parse_git_branch)
 BRANCH_NAME="staging"
 
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
-  read -p "[pre-push hook] Check for outdated gems? (Y/n) " yn
-  # case $yn in
-  #   [Yy]* ) 
-  #       npx standard-version
-  #       rm changelog.html 
-  #       cp -v changelog.md changelog.html
-  #       echo "<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>"|cat - changelog.html > /tmp/out && mv /tmp/out changelog.html
-  #       ;;
-  #   [Nn]* ) exit;;
-  #  esac
- 
+  read -p "[pre-push hook] Do yo? (Y/n) " yn
+  if [ "$yn" = "" ]; then
+    yn='Y'
+  fi
+  case $yn in
+      [Yy] ) 
+        npx standard-version
+        rm changelog.html 
+        cp -v changelog.md changelog.html
+        echo "<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>"|cat - changelog.html > /tmp/out && mv /tmp/out changelog.html
+      ;;
+      [Nn] ) exit;;
+      * ) echo "Please answer y or n for yes or no.";;
+  esac 
 fi    
 
