@@ -17,7 +17,7 @@ BRANCH_NAME="staging"
 
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
   read -p "Do you wish to install this program?" yn
-   case $yn in
+  case $yn in
     [Yy]* ) 
         npx standard-version
         rm changelog.html 
