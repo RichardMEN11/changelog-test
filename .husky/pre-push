@@ -1,6 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+exec < /dev/tty
+
 # checks if branch has something pending
 function parse_git_dirty() {
   git diff --quiet --ignore-submodules HEAD 2>/dev/null; [ $? -eq 1 ] && echo "*"
@@ -16,7 +18,7 @@ GIT_BRANCH=$(parse_git_branch)
 BRANCH_NAME="staging"
 
 if [ $GIT_BRANCH == $BRANCH_NAME ]; then
-  read -p "Do you wish to install this program?" yn
+  read -p "[pre-push hook] Check for outdated gems? (Y/n) " yn
   # case $yn in
   #   [Yy]* ) 
   #       npx standard-version
