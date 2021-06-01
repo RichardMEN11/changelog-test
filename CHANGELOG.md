@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.11.0](https://github.com/RichardMEN11/changelog-test/compare/v1.10.0...v1.11.0) (2021-06-01)
+
+
+### Features 🚀
+
+* add ([e2cac66](https://github.com/RichardMEN11/changelog-test/commit/e2cac66e7d98bb610b68ed0c49aae20e69ca5ae7))
+* finish ([9dd4c37](https://github.com/RichardMEN11/changelog-test/commit/9dd4c37422e8a9efc081d0dfcc6e327381b77e08))
+* new feature ([be0ac96](https://github.com/RichardMEN11/changelog-test/commit/be0ac965d66e0d040601d9bc2d6023e307c47a8f))
+* remove bump skip ([c12bc24](https://github.com/RichardMEN11/changelog-test/commit/c12bc24d6b1c7019743328ee5d5ece70c5633233))
+
 ## [1.10.0](https://github.com/RichardMEN11/changelog-test/compare/v1.9.16...v1.10.0) (2021-06-01)
 
 
