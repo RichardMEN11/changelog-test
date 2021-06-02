@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.13.0](https://github.com/RichardMEN11/changelog-test/compare/v1.12.1...v1.13.0) (2021-06-02)
+
+
+### Features 🚀
+
+* add test 7 ([5cf3014](https://github.com/RichardMEN11/changelog-test/commit/5cf30146c47a1858721c7c6b02ff53f29c5197fa))
+
 ### [1.12.1](https://github.com/RichardMEN11/changelog-test/compare/v1.12.0...v1.12.1) (2021-06-01)
 
 ## [1.12.0](https://github.com/RichardMEN11/changelog-test/compare/v1.11.1...v1.12.0) (2021-06-01)
